@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
-import javax.swing.*;
 
 /**
  * @author Abhinav Nahar
@@ -17,6 +16,7 @@ public class DataConfig {
 	public enum Action {
 		migrate,
 		validate,
+		reset,
 		noop,
 	}
 
@@ -35,6 +35,10 @@ public class DataConfig {
 				break;
 			case validate:
 				flyway.validate();
+				break;
+			case reset:
+				flyway.clean();
+				flyway.migrate();
 				break;
 			case noop:
 				break;

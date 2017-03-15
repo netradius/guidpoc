@@ -1,10 +1,7 @@
 spring:
   datasource:
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://192.168.1.6
-    databaseName: guidpoc
-    serverName: 192.168.1.6
-#    serverName: 169.254.218.252
+    url: jdbc:sqlserver://192.168.1.6:1433;databaseName=guidpoc
     username: guidpoc
     password: guidpoc
     platform: mssql
@@ -13,4 +10,4 @@ spring:
     show-sql: true
     hibernate.ddl-auto: validate
 db:
-  action: migrate
+  action: reset
