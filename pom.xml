@@ -4,7 +4,7 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.truemark.sqlserver</groupId>
+	<groupId>com.netradius.guidpoc</groupId>
 	<artifactId>guid-poc</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<parent>
@@ -79,4 +79,50 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>netradius-public</id>
+			<name>NetRadius Nexus Managed Public Repository</name>
+			<url>http://mirrors.netradius.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>netradius-private-thirdparty</id>
+			<name>NetRadius Third-party Private Repository</name>
+			<url>https://mirrors.netradius.com/nexus/content/repositories/private-thirdparty</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>netradius-public</id>
+			<name>NetRadius Nexus Managed Public Repository</name>
+			<url>http://mirrors.netradius.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 </project>
