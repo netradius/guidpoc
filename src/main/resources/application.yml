@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.1.6
+    databaseName: guidpoc
+    serverName: 192.168.1.6
+#    serverName: 169.254.218.252
+    username: guidpoc
+    password: guidpoc
+    platform: mssql
+  jpa:
+    database_platform: org.hibernate.dialect.SQLServerDialect
+    show-sql: true
+    hibernate.ddl-auto: validate
+db:
+  action: migrate
