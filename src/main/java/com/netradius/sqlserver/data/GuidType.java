@@ -19,6 +19,7 @@ import java.util.UUID;
  */
 public class GuidType extends AbstractStandardBasicType<UUID>
 		implements SingleColumnType<UUID>, LiteralType<UUID> {
+
 	public static final GuidType INSTANCE = new GuidType();
 
 	public GuidType() {

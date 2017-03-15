@@ -15,6 +15,7 @@ import java.util.UUID;
  * @author Abhinav Nahar
  */
 public class GuidTypeDescriptor extends AbstractTypeDescriptor<UUID> {
+
 	public static final GuidTypeDescriptor INSTANCE = new GuidTypeDescriptor();
 
 	public GuidTypeDescriptor() {

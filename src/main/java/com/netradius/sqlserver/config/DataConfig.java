@@ -8,7 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 /**
+ * This class is used to override the default beahvior of flyway to allow us to clean.
+ *
  * @author Abhinav Nahar
+ * @author Erik Jensen
  */
 @Configuration
 public class DataConfig {

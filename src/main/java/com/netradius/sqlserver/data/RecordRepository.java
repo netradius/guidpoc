@@ -8,11 +8,11 @@ import javax.transaction.Transactional;
 import java.util.UUID;
 
 /**
+ * JPA repository used to run native queries for testing.
+ *
  * @author Abhinav Nahar
  */
-
-public interface RecordRepository
-		extends PagingAndSortingRepository<Record, UUID>{
+public interface RecordRepository extends PagingAndSortingRepository<Record, UUID>{
 
 	Record findByName(String name);
 

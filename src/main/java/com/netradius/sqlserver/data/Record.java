@@ -10,12 +10,15 @@ import javax.persistence.Table;
 import java.util.UUID;
 
 /**
+ * Example Record hibernate bean.
+ *
  * @author Abhinav Nahar
  */
 @Data
 @Entity
 @Table(name = "record")
 public class Record {
+
 	@Id
 	@Column(name = "id", columnDefinition="uniqueidentifier")
 	@Type(type = "com.netradius.sqlserver.data.GuidType")
