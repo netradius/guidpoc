@@ -10,4 +10,4 @@ spring:
     show-sql: true
     hibernate.ddl-auto: validate
 db:
-  action: migrate
+  action: reset
